@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Activity Log | Sheger Mini Dash</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="seller.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="seller-page">
+  <header class="page-header">
+    <a href="seller-dashboard.html" class="back-link">← Dashboard</a>
+    <h1>Activity Log</h1>
+    <span class="pulse-badge" id="pulse-time">Updated</span>
+    <nav class="page-nav">
+      <a href="seller-dashboard.html">Dashboard</a>
+      <a href="seller-food.html">Food</a>
+      <a href="seller-packages.html">Packages</a>
+      <a href="seller-tasks.html">Tasks</a>
+      <a href="seller-activity.html" class="active">Log</a>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <h2>Recent events</h2>
+    <div class="activity-list" id="activity-log"></div>
+    <p class="disclaimer">Data syncs every 20 seconds. Simulation runs in background.</p>
+  </main>
+
+  <script src="shared.js"></script>
+  <script src="seller-activity.js"></script>
+</body>
+</html>

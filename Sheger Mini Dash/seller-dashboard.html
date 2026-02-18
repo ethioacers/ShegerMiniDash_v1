@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard | Sheger Mini Dash</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="seller.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="seller-page">
+  <header class="page-header seller-header">
+    <a href="index.html" class="back-link">← Home</a>
+    <h1>Mini Dash Central</h1>
+    <span class="pro-badge">Pro Seller</span>
+    <nav class="page-nav">
+      <a href="seller-dashboard.html" class="active">Dashboard</a>
+      <a href="seller-food.html">Food</a>
+      <a href="seller-packages.html">Packages</a>
+      <a href="seller-tasks.html">Tasks</a>
+      <a href="seller-activity.html">Log</a>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <p class="greeting" id="greeting">Good morning!</p>
+    <div class="metric-cards">
+      <div class="metric-card">
+        <span class="metric-icon">🍽️</span>
+        <span class="metric-value" id="active-food-count">0</span>
+        <span class="metric-label">FOOD ORDERS</span>
+      </div>
+      <div class="metric-card">
+        <span class="metric-icon">📦</span>
+        <span class="metric-value" id="active-package-count">0</span>
+        <span class="metric-label">PACKAGES</span>
+      </div>
+      <div class="metric-card">
+        <span class="metric-icon">📋</span>
+        <span class="metric-value" id="active-task-count">0</span>
+        <span class="metric-label">ACTIVE TASKS</span>
+      </div>
+      <div class="metric-card">
+        <span class="metric-icon">✓</span>
+        <span class="metric-value" id="completed-today-count">0</span>
+        <span class="metric-label">DONE TODAY</span>
+      </div>
+    </div>
+    <div class="revenue-card">
+      <span class="revenue-icon">ETB</span>
+      <span class="revenue-value" id="total-revenue">0</span>
+      <span class="revenue-label">Total Revenue</span>
+    </div>
+    <div class="quick-links">
+      <a href="seller-food.html" class="quick-link">🍽️ Food Orders</a>
+      <a href="seller-packages.html" class="quick-link">📦 Packages</a>
+      <a href="seller-tasks.html" class="quick-link">📋 Tasks</a>
+      <a href="seller-activity.html" class="quick-link">📜 Activity Log</a>
+    </div>
+    <div class="activity-preview">
+      <h3>Recent activity</h3>
+      <a href="seller-activity.html">Full Log →</a>
+      <div id="activity-preview"></div>
+    </div>
+  </main>
+
+  <script src="shared.js"></script>
+  <script src="seller-dashboard.js"></script>
+</body>
+</html>
